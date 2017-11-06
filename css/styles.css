@@ -1,0 +1,101 @@
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-signin
+{
+    padding-top: 70px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    height: 100%;
+    text-align: center;
+    background: url(../img/wall.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+.logo-signin {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    padding-bottom: 10px;
+}
+.wrapper {  
+    margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.space {
+    margin-bottom: 15px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 50px 35px 50px;
+  margin: 0 auto;
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.1);  
+
+  .form-signin-heading {
+      margin-bottom: 30px;
+    }
+
+    .form-control {
+      position: relative;
+      margin-top: 10px;
+      font-size: 16px;
+      height: auto;
+      padding: 10px;
+        @include box-sizing(border-box);
+
+        &:focus {
+          z-index: 2;
+        }
+    }
+
+    input[type="text"] {
+      margin-bottom: -1px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    input[type="password"] {
+      margin-bottom: 20px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+}
